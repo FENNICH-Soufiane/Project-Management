@@ -8,6 +8,13 @@ function App() {
 
   return (
     <>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+    <button class="bg-blue-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
