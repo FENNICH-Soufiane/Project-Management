@@ -8,6 +8,8 @@ import { useSelector } from 'react-redux';
 const Login = () => {
 
   const {user} = useSelector(state => state.auth)
+  // const user =" "
+ 
   console.log(user)
   const {
     register,

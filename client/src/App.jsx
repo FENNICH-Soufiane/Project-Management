@@ -1,7 +1,7 @@
 import { Routes, Route, useNavigate, Outlet, useLocation, Navigate } from 'react-router-dom'
 import { Toaster } from "sonner"
 // import Navbar from "./components/Navbar";
-// import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar";
 import Login from "./pages/Login";
 import TasksDetails from "./pages/TasksDetails";
 import Tasks from "./pages/Tasks";
@@ -19,7 +19,7 @@ function App() {
     return user ? (
       <div className='w-full h-screen flex flex-col md:flex-row'>
         <div className='w-1/5 h-screen bg-white sticky top-0 hidden md:block'>
-          {/* <Sidebar /> */}
+          <Sidebar />
         </div>
   
         {/* <MobileSidebar /> */}
@@ -33,7 +33,8 @@ function App() {
         </div>
       </div>
     ) : (
-      <Navigate to='/log-in' state={{ from: location }} replace />
+      // <Navigate to='/log-in' state={{ from: location }} replace />
+      <p>ok</p>
     );
   }
 
